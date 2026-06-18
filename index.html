@@ -42,19 +42,23 @@
 
     <form>
         <div class="calculator-inputs">
-            <input type="number" placeholder="First number">
-            <input type="number" placeholder="Second number">
+            <input type="number" id="num1" placeholder="First number">
 
-             <select>
-                <option>+</option>
-                <option>-</option>
-                <option>*</option>
-                <option>/</option>
+            <select id="operator">
+                  <option value="+">+</option>
+                  <option value="-">-</option>
+                  <option value="*">*</option>
+                  <option value="/">/</option>
             </select>
 
-            <button type="submit">Calculate</button>
+            <input type="number" id="num2" placeholder="Second number">
+
+            <button type="button" onclick="calculate()">
+            Calculate
+            </button>
         </div>
 </form>
+<p id="result"></p>
 <script src="calculator.js"></script>
 </body>
 
