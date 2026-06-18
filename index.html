@@ -29,10 +29,32 @@
             h1, p {
                 margin: 0;
             }
+
+            .calculator-inputs {
+                margin-top: 20px; /* Adjust this to create your gap */
+                  display: flex;    /* Makes the inputs inside sit nicely next to each other */
+                 gap: 10px;
+            }
         }
     </style>
     <h1>Hello... World?</h1>
     <p>Anyway, look at this calculator!</p>
+
+    <form>
+        <div class="calculator-inputs">
+            <input type="number" placeholder="First number">
+            <input type="number" placeholder="Second number">
+
+             <select>
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+
+            <button type="submit">Calculate</button>
+        </div>
+</form>
 </body>
 
 </html>
